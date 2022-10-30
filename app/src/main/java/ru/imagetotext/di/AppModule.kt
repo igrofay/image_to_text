@@ -17,7 +17,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
-    private const val urlServer = "http://192.168.1.157:5000"
+    private const val urlServer = "http://176.28.64.201:3436"
     @Provides
     @Singleton
     fun provideHttpClient() : HttpClient {

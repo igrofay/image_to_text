@@ -25,7 +25,7 @@ class MainViewModel @Inject constructor(
     private val app: Application,
     private val repository: FeaturesRepository
 ):ViewModel(),EventBase<EventMain>{
-    private val _state = mutableStateOf<StateMain>(StateMain.ReadText("wdaadw"))
+    private val _state = mutableStateOf<StateMain>(StateMain.PhotographingCamera)
     private var job: Job? = null
     val stateMain: State<StateMain> get() = _state
     val imageCapture = ImageCapture.Builder()
